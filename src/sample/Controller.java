@@ -131,6 +131,8 @@ public class Controller implements Initializable{
                 Port.getInstance().open(comPort);
                 openBtn.setText("CLOSE");
                 startBtn.setDisable(false);
+                internal.setDisable(false);
+                external.setDisable(false);
             }
             else{
                 Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -144,6 +146,8 @@ public class Controller implements Initializable{
                 Port.getInstance().close();
                 openBtn.setText("OPEN");
                 startBtn.setDisable(true);
+                internal.setDisable(true);
+                internal.setDisable(true);
         }
     }
 
@@ -153,6 +157,8 @@ public class Controller implements Initializable{
         external.setToggleGroup(group);
         internal.setSelected(true);
         startBtn.setDisable(true);
+        internal.setDisable(true);
+        external.setDisable(true);
     }
 
     public void onChooseMode(ActionEvent actionEvent) {
