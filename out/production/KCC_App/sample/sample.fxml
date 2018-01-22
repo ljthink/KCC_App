@@ -10,14 +10,14 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="275.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="275.0" prefWidth="325.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <center>
       <TextArea fx:id="log" prefHeight="294.0" prefWidth="550.0" BorderPane.alignment="CENTER" />
    </center>
    <bottom>
       <HBox prefHeight="4.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="openBtn" mnemonicParsing="false" onAction="#onOpen" prefHeight="31.0" prefWidth="47.0" text="OPEN">
+            <Button fx:id="openBtn" mnemonicParsing="false" onAction="#onOpen" prefHeight="25.0" prefWidth="66.0" text="OPEN">
                <HBox.margin>
                   <Insets bottom="10.0" left="10.0" top="10.0" />
                </HBox.margin>
@@ -38,7 +38,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
             </Button>
-            <VBox prefHeight="47.0" prefWidth="83.0">
+            <VBox prefHeight="52.0" prefWidth="108.0">
                <children>
                   <Label alignment="CENTER" prefHeight="17.0" prefWidth="150.0" text="COM port:" textAlignment="CENTER">
                      <VBox.margin>
@@ -63,7 +63,7 @@
                   <Insets top="5.0" />
                </opaqueInsets>
             </Label>
-            <Label fx:id="label" text="Click the START button to open the port and start receiving data">
+            <Label fx:id="label" text="Click the OPEN button to open the port and START to receive data">
                <font>
                   <Font size="10.0" />
                </font></Label>
