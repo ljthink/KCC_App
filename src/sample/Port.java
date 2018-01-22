@@ -89,7 +89,9 @@ public class Port {
         int numberOfBytes=0;
         byte data;
         while(time==0){
-            Stop=false;
+            if(Stop){
+                return 0;
+            }
             while (!Stop)
             {
                 try {
@@ -168,7 +170,7 @@ public class Port {
     }
     public void SendStop(){
         try {
-            serialPort.getOutputStream().write(0);
+            serialPort.getOutputStream().write(2);
         } catch (IOException e) {
             e.printStackTrace();
         }

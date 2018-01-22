@@ -67,8 +67,10 @@ public class Controller implements Initializable{
             float time = calculateTime(impulses);
             log("Estimated time is: " + time + " " + units + "\n");
         }
-        Port.getInstance().SendStop();
+        else{
+            log("Estimated time is 0 s\n");
 
+        }
     }
 
     private float calculateTime(long impulses) {
@@ -161,6 +163,5 @@ public class Controller implements Initializable{
             Port.getInstance().SendComment(new Commend((byte)96,(byte)1));
 
         }
-        Port.getInstance().SendStop();
     }
 }
