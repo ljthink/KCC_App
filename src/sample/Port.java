@@ -84,6 +84,7 @@ public class Port {
         return oneByte;
     }
     public long readTime() {
+        Stop=false;
         long time=0;
         long unsignedData=0;
         int numberOfBytes=0;
